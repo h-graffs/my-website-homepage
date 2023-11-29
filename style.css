@@ -1,0 +1,483 @@
+/*need to add more browser compatibilty. eg. -webkit*/
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: auto auto;
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  border: 4px solid black;
+  border-radius: 30px;
+}
+
+#divToHoldLogo {
+  display: flex;
+  flex-direction: column;
+  float: top;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#DMM-TEXT {
+  width: 157px;
+  height: 60px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+#wand {
+  display: inline-block;
+  width: 80%;
+  height: 100px;
+  margin-top: -50px;
+  margin-right: 60px;
+}
+
+#logo-line {
+  float: left;
+  background-color: black;
+  height: 8px;
+  width: 158px;
+  margin: auto auto;
+  margin-top: 50px;
+  margin-left: 3px;
+}
+
+#logo-line-dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  transform: translate(150px);
+  animation: ballLineSlider 4s;
+  animation-direction: right;
+}
+
+@keyframes ballLineSlider {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+
+#wand-end-div {
+  float: right;
+  height: 50px;
+  width: 70px;
+  margin-top: -24px;
+  margin-right: -75px;
+}
+
+#elec1 {
+  width: 50%;
+  height: 8px;
+  background-color: black;
+  transform: rotate(-45deg);
+  margin: auto 0;
+}
+
+#elec2 {
+  width: 50%;
+  height: 8px;
+  background-color: black;
+  transform: rotate(-22.5deg);
+  margin: auto 0;
+}
+
+#elec3 {
+  width: 50%;
+  height: 8px;
+  background-color: black;
+  margin: auto 0;
+}
+
+#elec4 {
+  width: 50%;
+  height: 8px;
+  background-color: black;
+  transform: rotate(22.5deg);
+  margin: auto 0;
+}
+
+#elec5 {
+  width: 50%;
+  height: 8px;
+  background-color: black;
+  transform: rotate(45deg);
+  margin: auto 0;
+}
+
+#white-blast1,
+#white-blast2,
+#white-blast3,
+#white-blast4,
+#white-blast5 {
+  width: 8px;
+  height: 8px;
+  background-color: #00ee00;
+  transform: translateX(50px);
+  animation: whiteBlastSlider 7s, fadeIn 5s;
+  animation-direction: right;
+}
+
+@keyframes whiteBlastSlider {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#ballrollingtext-div {
+  width: 90vw;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+}
+
+#gettheballrollingtext {
+  font-family: Teko, sans-serif;
+  margin: auto auto;
+  font-size: 5vw;
+}
+
+#ballpath-div {
+  min-height: 40px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+#ball-outer {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  float: left;
+  transition: 2.5s linear;
+  margin-left: 4px;
+}
+
+#ball-inner {
+  position: relative;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  margin: 3px;
+}
+
+#ball-line {
+  background-color: black;
+  height: 4px;
+  width: 219px;
+  margin: auto;
+}
+
+#ball-button {
+  display: flex;
+  border: 5px solid black;
+  border-radius: 8px;
+  font-family: verdana;
+  height: auto;
+  width: auto;
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin: auto auto;
+  font-size: 20px;
+}
+
+#ball-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: black;
+  background-color: white;
+}
+
+#button-glow {
+  display: flex;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: purple;
+  width: 100px;
+  height: 95px;
+  border: 2px solid purple;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  #button-glow {
+    height: 75px;
+    margin-top: -10px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#div-to-center-button {
+  animation: fadein 14s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#i-container {
+  display: flex;
+  min-height: 200px;
+  justify-content: center;
+  margin: 100 auto;
+  margin-bottom: 10px;
+  padding-top: 500px;
+}
+
+@media (max-width: 940px) {
+  #i-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 765px) {
+  #i-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+  }
+}
+
+/*DISPLAYS ICONS VERTCAL BLOCK AT SCREEN-WIDTH 480PX AND BELOW */
+
+@media (max-width: 480px) {
+  #i-container {
+    display: block;
+  }
+  #img1-div,
+  #img2-div,
+  #img3-div,
+  #img4-div {
+    margin: auto auto;
+    margin-top: 10px;
+  }
+}
+
+#i-design {
+  background-color: black;
+  color: white;
+  width: 95%;
+  font-family: verdana;
+  font-size: 2em;
+  margin: auto auto;
+  text-align: center;
+}
+
+#i-program {
+  background-color: black;
+  color: white;
+  width: 95%;
+  font-family: verdana;
+  font-size: 2em;
+  margin: auto auto;
+  text-align: center;
+}
+
+#i-create {
+  background-color: black;
+  color: white;
+  width: 95%;
+  font-family: verdana;
+  font-size: 2em;
+  margin: auto auto;
+  text-align: center;
+}
+
+#i-inspire {
+  background-color: black;
+  color: white;
+  width: 95%;
+  font-family: verdana;
+  font-size: 2em;
+  margin: auto auto;
+  text-align: center;
+}
+
+#design-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#program-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#create-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#inspire-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (max-width: 380px) {
+  #program-div,
+  #create-div,
+  #inspire-div {
+    margin-top: 40px;
+  }
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  transition: transform 0.7s;
+}
+
+#img1,
+#img2,
+#img3,
+#img4:hover {
+  cursor: pointer;
+}
+
+#img1-div:hover > #img1 {
+  -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+}
+
+#img2-div:hover > #img2 {
+  -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+}
+
+#img3-div:hover > #img3 {
+  -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+}
+
+#img4-div:hover > #img4 {
+  -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+}
+
+.marginTop-10px {
+  margin-top: 10px;
+}
+
+.paddingLeft-10px {
+  padding-left: 10px;
+}
+
+.oval {
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 200px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 90%;
+  float: bottom;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: auto auto;
+  color: white;
+  font-family: verdana;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+#thanks-to {
+  padding-bottom: 10px;
+}
+
+#designerName {
+  padding-top: 10px;
+}
+
+/*ORIGINAL DIMENSIONS OF img4 ARE SLIGHTLY LARGER THAN THE REST AT 151Px so i've set them all to 144*/
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  width: 144px;
+  height: 144px;
+}
+
+#link-to-codepen {
+  color: blue;
+  font-size: 10px;
+}
+
+#link-to-codepen:hover {
+  cursor: pointer;
+}
