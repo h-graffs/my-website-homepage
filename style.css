@@ -292,15 +292,6 @@
 @media (max-width: 940px) {
   #i-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    row-gap: 30px;
-  }
-}
-
-@media (max-width: 765px) {
-  #i-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     row-gap: 30px;
